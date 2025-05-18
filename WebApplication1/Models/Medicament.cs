@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebApplication1.Properties.Models;
+namespace WebApplication1.Models;
 
 public class Medicament
 {
@@ -20,5 +20,5 @@ public class Medicament
     [MaxLength(100)]
     public string Type { get; set; }
     
-    
+    public virtual ICollection<Prescription_Medicament> Prescription_Medicaments { get; set; }
 }

@@ -1,4 +1,4 @@
-namespace WebApplication1.Properties.Models;
+namespace WebApplication1.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

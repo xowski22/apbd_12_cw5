@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApplication1.Properties.Models;
+namespace WebApplication1.Models;
 
 public class Prescription
 {
@@ -25,4 +25,6 @@ public class Prescription
     
     [ForeignKey("IdDoctor")]
     public Doctor Doctor { get; set; }
+    
+    public virtual ICollection<Prescription_Medicament> Prescription_Medicaments { get; set; }
 }
